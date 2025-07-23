@@ -31,3 +31,6 @@ jobs:
 
       - name: Test
         run: turbo test
+
+      - name: Run Backend Tests
+        run: cd backend && poetry install && poetry run pytest
